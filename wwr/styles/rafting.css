@@ -14,60 +14,168 @@
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+  font-family: Arial, sans-serif;
+  background: #fafafd;
+  color: #222;
 }
 
 header, main, footer {
-  width: 840px;
+  max-width: 1000px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-h1, h2 {
+/* HEADER */
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  margin: 30px auto 0;
+  max-width: 950px;
+  padding: 20px 0;
+}
+.hero h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c9d2da;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  padding: 20px;
+}
+.hero-text {
+  flex: 2;
+  padding-right: 20px;
+}
+.hero-image {
+  flex: 4;
+  min-width: 10px;
+  min-height: 100px;
+  background: #b5e2f5 url('https://img.icons8.com/ios-filled/50/000000/picture.png') center/40% no-repeat;
+  border-radius: 6px;
+  border: 2px solid #e6eaf5;
+  opacity: 0.9;
+}
+
+/* HISTORY SECTION */
+section h2 {
+  text-align: center;
   font-family: var(--heading-font);
   color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+section {
+  margin: 2rem 0;
 }
 
-.socialmedia a {
-  text-decoration: none;
+.history-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.hero {
-  position: relative;
+.history-layout p {
+  flex: 1;
+  padding: 0 1rem;
 }
 
-.hero img {
-  display: block;
-  width: 100%;
+.history-layout img {
+  width: 200px;
   height: auto;
+  border-radius: 8px;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
+/* ADVENTURE SECTION */
+.adventure {
+  margin: 30px auto;
+  max-width: 950px;
+  background: #afb2b3;
+  border: 1.5px solid #bbb;
+  border-radius: 6px;
+  padding: 25px 0 30px 0;
+}
+.adventure h2 {
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.adventure-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.adventure-item {
+  flex: 1 1 140px;
+  max-width: 140px;
+  text-align: center;
+  }
+
+.adventure img {
+  width: 100px;
+  height: 70px;
+  margin: 0 auto 10px;
+  background: #ddd url('https://img.icons8.com/ios-filled/50/808080/picture.png') center/40% no-repeat;
+  border-radius: 6px;
+  border: 2px solid #eee;
+  opacity: 0.9;
+  }
+
+.adventure-item p {
+  font-size: 0.95em;
+  color: #444;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--secondary-color);
-  padding: 16px;
-  opacity: 0.8;
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
+footer p {
+  margin: 0;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: auto;
 }
