@@ -1,3 +1,122 @@
+
+/* CONTACT INFO SECTION */
+.contact-info {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2a2a2a;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info .map {
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* EMPLOYEE GALLERY */
+.employees {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.employee-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.employee-gallery figure {
+  max-width: 200px;
+}
+
+.employee-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.employee-gallery figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2a2a2a;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #2a7ae2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1c5fb8;
+}
 :root {
   --primary-color: #0E103D;
   --secondary-color: #A5668B;
@@ -47,114 +166,6 @@ nav a {
   color: white;
   font-weight: bold;
 }
-
-/* HERO SECTION */
-.hero {
-  margin: 30px auto 0;
-  max-width: 950px;
-  padding: 20px 0;
-}
-.hero h1 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #c9d2da;
-  border: 2px solid #aaa;
-  border-radius: 4px;
-  padding: 20px;
-}
-.hero-text {
-  flex: 2;
-  padding-right: 20px;
-}
-.hero-image {
-  flex: 4;
-  min-width: 10px;
-  min-height: 100px;
-  background: #b5e2f5 url('https://img.icons8.com/ios-filled/50/000000/picture.png') center/40% no-repeat;
-  border-radius: 6px;
-  border: 2px solid #e6eaf5;
-  opacity: 0.9;
-}
-
-/* HISTORY SECTION */
-section h2 {
-  text-align: center;
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-section {
-  margin: 2rem 0;
-}
-
-.history-layout {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.history-layout p {
-  flex: 1;
-  padding: 0 1rem;
-}
-
-.history-layout img {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* ADVENTURE SECTION */
-.adventure {
-  margin: 30px auto;
-  max-width: 950px;
-  background: #afb2b3;
-  border: 1.5px solid #bbb;
-  border-radius: 6px;
-  padding: 25px 0 30px 0;
-}
-.adventure h2 {
-  text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
-.adventure-grid {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 0 15px;
-}
-.adventure-item {
-  flex: 1 1 140px;
-  max-width: 140px;
-  text-align: center;
-  }
-
-.adventure img {
-  width: 100px;
-  height: 70px;
-  margin: 0 auto 10px;
-  background: #ddd url('https://img.icons8.com/ios-filled/50/808080/picture.png') center/40% no-repeat;
-  border-radius: 6px;
-  border: 2px solid #eee;
-  opacity: 0.9;
-  }
-
-.adventure-item p {
-  font-size: 0.95em;
-  color: #444;
-}
-
 /* FOOTER */
 footer {
   display: flex;

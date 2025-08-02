@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="AKOUNALO komi richard">
+  <meta name="description" content="Contact White Water Rafting for trip information, questions, or reservations.">
+  <title>Contact Us - White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/wwr-logo.png" alt="Rafting Company Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- CONTACT INFO SECTION -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 River Lane, Adventure Town, CO 80014</p>
+      <p><strong>Phone:</strong> (800) 555-RAFT</p>
+      <p><strong>Email:</strong> contact@wwrrafting.com</p>
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4567900000003!2d-104.990251!3d39.739236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ0JzIxLjMiTiAxMDTCsDU5JzI0LjkiVw!5e0!3m2!1sen!2sus!4v1690000000000" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- EMPLOYEE PROFILES -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="Guide John">
+          <figcaption>John Doe - Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Coordinator Jane">
+          <figcaption>Jane Smith - Trip Coordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Safety Specialist Mike">
+          <figcaption>Mike Brown - Safety Specialist</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="username">Full Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="useremail">Email Address:</label>
+        <input type="email" id="useremail" name="useremail" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Submit Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting | AKOUNALO komi richard</p>
+    <div class="socialmedia">
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://x.com"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+    <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
+  </footer>
+</body>
+</html>
